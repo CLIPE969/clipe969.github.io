@@ -5,7 +5,7 @@
       "delegate_permission/common.get_login_creds"
     ],
     "target": {
-      "namespace": " Jeu de Lettres ",
+      "namespace": " android_app ",
       "package_name": "com.clipe969.jeudelettres",
       "sha256_cert_fingerprints": [
         "A5:69:5E:E3:68:71:CB:18:E3:D5:E7:38:83:F4:A9:BE:04:25:5E:42:54:7C:DE:60:25:2E:B5:0E:6C:2D:C0:A0"
