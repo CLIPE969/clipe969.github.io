@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>JEUX DE LETTRES</title>
+
+<link rel="manifest" href="manifest.json">
+
+<style>
+body{
+  font-family:Freestyle Script;
+  text-align:center;
+  margin:0;
+  background:#ffffff;
+}
+
+h1{
+  margin-top:50px;
+  font-size:50px;
+}
+
+.menu{
+  margin-top:50px;
+}
+
+.btn{
+  display:block;
+  width:260px;
+  margin:20px auto;
+  padding:20px;
+  font-size:22px;
+  border:2px solid #000;
+  cursor:pointer;
+  background:#f5f5f5;
+  border-radius:12px;
+}
+
+.btn:hover{
+  background:#e0e0e0;
+}
+</style>
+</head>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+<body>
+
+<h1>JEUX DE LETTRES</h1>
+
+<div class="menu">
+ <button class="btn" onclick="go('trio-lettres.html')">TRIO-LETTRES</button>
+<button class="btn" onclick="go('quatro-lettres.html')">QUATRO-LETTRES</button>
+<button class="btn" onclick="go('quinto-lettres.html')">QUINTO-LETTRES</button>
+
+<p style="font-size:31px; font-style:italic; margin-top:30px; line-height:1.5;">
+Trois jeux sont proposés.<br>
+Pour chacun, remplir  les quatre grilles de vos mots<br>
+verticalement et horizontalement ! <br>
+Les verbes conjugués, <br> les mots au pluriel <br> et les abréviations <br> ne sont pas pris en compte.
+</p>
+
+<p style="font-size:24px; margin-top:40px;">
+Le lexique des mots est lisible en aide pour chaque jeu sur le site :<br>
+<a href="https://vers2026.wixsite.com/trio-lettres" target="_blank">
+2026.wixsite.com/trio-lettres
+</a>
+</p>
+
+
+
+ 
+</div>
+
+<script>
+function go(page){
+  window.location.href = page;
+}
+
+// Service Worker (APP)
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
+
+
+
+ 
+</div>
+
+<script>
+function go(page){
+  window.location.href = page;
+}
+
+// Service Worker (APP)
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
